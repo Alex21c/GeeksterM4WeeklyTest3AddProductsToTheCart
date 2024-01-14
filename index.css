@@ -1,0 +1,114 @@
+:root {
+  --color-white: #FFFFFF;
+}
+
+*, ::before, ::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.displayNone {
+  display: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: rgb(111, 125, 119);
+  color: rgb(188, 199, 196);
+}
+
+figure > img {
+  width: 10rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 15rem;
+  font-size: 1.1rem;
+}
+
+div.wrapperProductsAndCart {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+div.wrapperMinusPlusQuantity {
+  background-color: rgb(65, 108, 89);
+  padding: 0.2rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  border: 1px solid rgb(65, 108, 89);
+  align-items: center;
+}
+
+div.wrapperMinusPlusQuantity:hover {
+  border-color: rgb(171, 212, 194);
+  box-shadow: rgb(82, 77, 77) 1px 1px 3px 2px;
+}
+
+div.wrapperMinusPlusQuantity > span.btnMinus, div.wrapperMinusPlusQuantity > span.btnPlus {
+  font-size: 1.5rem;
+  padding: 0rem 0.5rem;
+  border-radius: 100%;
+  transition: all 0.5s ease 0s;
+  user-select: none;
+}
+
+div.wrapperMinusPlusQuantity > span.btnMinus:hover, div.wrapperMinusPlusQuantity > span.btnPlus:hover {
+  background-color: rgb(105, 146, 128);
+  color: white;
+  box-shadow: rgb(73, 63, 63) 1px 1px 1px 1px;
+}
+
+table#products, table#cart {
+  border-collapse: collapse;
+}
+
+table#products tr, table#cart tr {
+  background-color: rgb(26, 43, 36);
+  padding: 1rem;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 1px 1px #bcc7c4;
+}
+
+table#products thead > tr, table#cart thead > tr {
+  background-color: transparent;
+}
+
+table#products thead > tr th, table#cart thead > tr th {
+  font-size: 2.3rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+table#cart tr{
+  /* background-color:  #275743; */
+  background-color:#416c59;
+  /* box-shadow: 1px 1px 1px 1px black; */
+}
+
+table#cart thead tr,
+table#products thead tr{
+  box-shadow: none;
+}
