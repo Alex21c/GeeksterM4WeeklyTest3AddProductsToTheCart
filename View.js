@@ -103,7 +103,7 @@ class View{
             th.innerText = `Total : ${this.convertCurrencyIntoLakhsCrores(cartTotal)} Only`;
           tr.appendChild(th);
         this.cartTableFoot.appendChild(tr);
-        this.lazyLoadImages();
+        setTimeout(this.lazyLoadImages,0);
       }else{
         let tr = document.createElement('tr');
           let th = document.createElement('th');        
@@ -179,7 +179,7 @@ class View{
 
 
     }
-    document.addEventListener("DOMContentLoaded", this.lazyLoadImages);
+    setTimeout(this.lazyLoadImages,0);
     
   }
 
