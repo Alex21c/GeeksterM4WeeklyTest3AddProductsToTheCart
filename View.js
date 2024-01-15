@@ -179,8 +179,8 @@ class View{
 
 
     }
-
-    this.lazyLoadImages();
+    document.addEventListener("DOMContentLoaded", this.lazyLoadImages);
+    
   }
 
 }

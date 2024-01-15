@@ -9,4 +9,4 @@ productsTable.addEventListener('click', (event)=>controller.request(event));
 // console.log(productsTable);
 
 // Lazy Loading of Image
-document.addEventListener("DOMContentLoaded", view.lazyLoadImages());
+document.addEventListener("DOMContentLoaded", view.lazyLoadImages);
