@@ -84,7 +84,7 @@ class View{
               
               let currentTotal = product.quantity * product.price;
               cartTotal +=currentTotal;
-              span.innerText = `#${product.quantity} x ${this.convertCurrencyIntoLakhsCrores(currentTotal)}`;  
+              span.innerText = `#${product.quantity} x ${this.convertCurrencyIntoLakhsCrores(product.price)}`;  
             td2.appendChild(span);          
           tr.appendChild(td2);        
           this.cartTableBody.appendChild(tr);
