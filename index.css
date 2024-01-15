@@ -14,7 +14,7 @@
 
 html {
   font-size: 16px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -32,6 +32,7 @@ figure {
   gap: 0.5rem;
   max-width: 15rem;
   font-size: 1.1rem;
+  align-items: center;
 }
 
 div.wrapperProductsAndCart {
@@ -53,6 +54,7 @@ div.wrapperMinusPlusQuantity {
   transition: all 0.5s ease 0s;
   border: 1px solid rgb(65, 108, 89);
   align-items: center;
+  user-select: none;
 }
 
 div.wrapperMinusPlusQuantity:hover {
@@ -111,4 +113,27 @@ table#cart tr{
 table#cart thead tr,
 table#products thead tr{
   box-shadow: none;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:836px) {
+  div.wrapperProductsAndCart{
+    flex-direction: column-reverse;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:492px) {
+  table#products tr, table#cart tr{    
+    flex-direction: column;    
+    gap: 1rem;    
+    align-items: center;    
+    justify-content: center;
+  }
+
 }
